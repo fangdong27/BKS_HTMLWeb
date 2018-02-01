@@ -14,7 +14,7 @@ body.modal-open {
     
 }
 
-/*ĞÂ°æµÇÂ¼Ò³ÃæÎÄ±¾¿òcssÉèÖÃ*/
+/*æ–°ç‰ˆç™»å½•é¡µé¢æ–‡æœ¬æ¡†cssè®¾ç½®*/
 .textbox {
     position: relative;
     border: 1px solid #c2c2c2;
@@ -132,7 +132,7 @@ body.modal-open {
     border-color: #ffa8a8;
     background-color: #fff3f3;
 }
-/*ĞÂ°æµÇÂ¼ÊäÈë¿òµÄicon*/
+/*æ–°ç‰ˆç™»å½•è¾“å…¥æ¡†çš„icon*/
 .icon-man {
     background: url('../Img/icons/man.png') no-repeat center center;
     white-space: nowrap;
@@ -143,8 +143,14 @@ body.modal-open {
 .icon-lock {
     background: url('../Img/icons/lock.png') no-repeat center center;
 }
+.icon-mail {
+    background: url('../Img/icons/mailbox.png') no-repeat center center;
+}
 
-/*ĞÂ°æµÇÂ¼°´Å¥±³¾°*/
+.icon-tel {
+    background: url('../Img/icons/tel.png') no-repeat center center;
+}
+/*æ–°ç‰ˆç™»å½•æŒ‰é’®èƒŒæ™¯*/
 .loginSpan {
     width: 260px;
     height: 40px;
@@ -166,20 +172,20 @@ body.modal-open {
     text-decoration:none;
     cursor:pointer;
     padding:0px;
-    font-family:'Microsoft YaHei','Î¢ÈíÑÅºÚ','Arial';
+    font-family:'Microsoft YaHei','å¾®è½¯é›…é»‘','Arial';
     width:240px;
     height:40px;
     border:none;
  }
 
-/*×¢²á°´Å¥±³¾° font-family:'Microsoft YaHei','Î¢ÈíÑÅºÚ','Arial';*/
+/*æ³¨å†ŒæŒ‰é’®èƒŒæ™¯ font-family:'Microsoft YaHei','å¾®è½¯é›…é»‘','Arial';*/
 
 .regist {
     width: 260px;
     height: 40px;
     margin: 5px 0px;
     text-align: center;
-    font-family:'Microsoft YaHei','Î¢ÈíÑÅºÚ','Arial';
+    font-family:'Microsoft YaHei','å¾®è½¯é›…é»‘','Arial';
 }
 
 .regist a {
@@ -195,8 +201,8 @@ body.modal-open {
     text-decoration: none;
 }
 
-/*µ¯³ö²ãÎÄ±¾»òµÃ½¹µãµÄÌáÊ¾²ã*/
-/*µÇÂ¼Ò³ÃæÌáÊ¾*/
+/*å¼¹å‡ºå±‚æ–‡æœ¬æˆ–å¾—ç„¦ç‚¹çš„æç¤ºå±‚*/
+/*ç™»å½•é¡µé¢æç¤º*/
 .tip1 {
     position: absolute;
     top: 63px;
@@ -213,7 +219,7 @@ body.modal-open {
     font-size:12px;
 }
 
-/*×¢²áÒ³ÃæÌáÊ¾*/
+/*æ³¨å†Œé¡µé¢æç¤º*/
 .registTip {
     height:auto;
 }
@@ -287,7 +293,7 @@ body.modal-open {
     left: 347px; 
 }
 
-/*Ò³ÃæÎÄ±¾»òµÃ½¹µãµÄÌáÊ¾²ã*/
+/*é¡µé¢æ–‡æœ¬æˆ–å¾—ç„¦ç‚¹çš„æç¤ºå±‚*/
 .tipPage {
     position: absolute;
     top: 63px;
@@ -304,7 +310,7 @@ body.modal-open {
     font-size:12px;
 }
 
-/*µÇÂ¼,×¢²áµÈÎÄ±¾ÄÚ¿òcss*/
+/*ç™»å½•,æ³¨å†Œç­‰æ–‡æœ¬å†…æ¡†css*/
 
 .loginDiv {
     margin:10px 17px 1px 17px;
@@ -328,7 +334,7 @@ body.modal-open {
     text-align: center;
 }
 
-/*µÇÂ¼±êÌâ*/
+/*ç™»å½•æ ‡é¢˜*/
 .loginTitle {
     width:100%;
     height:40px;
@@ -352,7 +358,7 @@ body.modal-open {
     margin:30px 0px 0px 20px;
 }*/
 
-/*µÇÂ¼¿ò*/
+/*ç™»å½•æ¡†*/
 .loginFrame {
     width:410px;
     height:300px;
@@ -364,7 +370,7 @@ body.modal-open {
     bottom:90px;
 }
 
-/*¶¥²¿ºáÌõ*/
+/*é¡¶éƒ¨æ¨ªæ¡*/
 .topContent {
     width:1000px;
     height:100px;
@@ -385,7 +391,7 @@ body.modal-open {
    margin:4px 0px;
 }
 
-/*¶¥²¿ÎÄ×Ö*/
+/*é¡¶éƒ¨æ–‡å­—*/
 .topWords {
     width:1000px;
     height:30px;
@@ -407,15 +413,15 @@ body.modal-open {
     
 }
 
-/*µÇÂ¼µ¯³ö¿ò*/
+/*ç™»å½•å¼¹å‡ºæ¡†*/
 #hidebg {
     position: absolute;
     left: 0px;
     top: 0px;
     background-color: #000;
-    width: 100%; /*¿í¶ÈÉèÖÃÎª100%£¬ÕâÑù²ÅÄÜÊ¹Òş²Ø±³¾°²ã¸²¸ÇÔ­Ò³Ãæ*/
-    filter: alpha(opacity=60); /*ÉèÖÃÍ¸Ã÷¶ÈÎª60%*/
-    opacity: 0.6; /*·ÇIEä¯ÀÀÆ÷ÏÂÉèÖÃÍ¸Ã÷¶ÈÎª60%*/
+    width: 100%; /*å®½åº¦è®¾ç½®ä¸º100%ï¼Œè¿™æ ·æ‰èƒ½ä½¿éšè—èƒŒæ™¯å±‚è¦†ç›–åŸé¡µé¢*/
+    filter: alpha(opacity=60); /*è®¾ç½®é€æ˜åº¦ä¸º60%*/
+    opacity: 0.6; /*éIEæµè§ˆå™¨ä¸‹è®¾ç½®é€æ˜åº¦ä¸º60%*/
     display: none;
     z-Index: 10002;
 }
