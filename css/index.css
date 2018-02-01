@@ -1,0 +1,845 @@
+﻿body {
+    font-family: 'Microsoft YaHei',宋体,Arial,Impact;
+    font-size: 14px; 
+    margin: 0px;
+    padding: 0px; 
+    width: 100%;
+    height:100%;
+}
+#form1{
+     background: url(../Img/bg_main.png) no-repeat center top;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    width: 100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px; 
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+b {
+    color: #ff6a00;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title a {
+    color: white;
+}
+
+#top .arrow1 {
+    width: 0px;
+    height: 12px;
+    cursor: pointer;
+    margin: -22px 0px 0px 65px;
+    border-width: 10px 10px 0px;
+    border-style: solid;
+    border-color: #e6e4e4 transparent transparent;
+    cursor: pointer;
+    position:relative;
+    z-index:10000;
+}
+
+/*================顶部内容样式================================*/
+#top nav .title {
+    width: 85px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+
+#top nav .div_title {
+    height: 100%;
+    width: 1000px;
+    background-color: #712525;
+    text-align: left;
+    margin: 0px auto;
+}
+
+#top nav .topAll {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    background-color: #712525;
+    margin: 10px auto;
+}
+
+.currentPage a,.a_type {
+    width:inherit;height:38px;border-radius:4px 5px ;background-color:#fff;color:#712525 !important;display:inline-block;margin:1px auto;
+}
+
+#bkType {
+   text-align: left;
+}
+
+#bkType:hover #allType nav {
+   display: block;
+}
+
+#bkType:hover .arrow1 {
+   width: 0px;
+   height: 12px;
+   cursor: pointer;
+   margin: -40px 0px 18px 65px;
+   border-width: 0px 10px 10px;
+   border-style: solid;
+   border-color: transparent transparent #e6e4e4;/*#fff*/
+   cursor: pointer;
+   position:relative;
+   z-index:10000;
+}
+
+
+#top nav a:hover .title {
+    background-color: #572222;
+}
+
+#allType nav { /*247,245,237,200,178,143,*/
+    background: rgba(200,178,143,0.8);
+    filter: alpha(opacity=80);
+    /*opacity:0.4;不能实现背景透明，文字不透明*/
+    position: relative;
+    margin: -1px 0px 0px -25px;
+    width: 150px;
+    z-index: 9999;
+    height: 230px;
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+    display: none;
+}
+
+#allType nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#allType nav #mainNav li {
+    margin: 0 5px 10px 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    display: block; /*display:inline-block;可使导航横向*/
+    float: left;
+}
+
+#allType nav #mainNav #BK_Novel li {
+    margin: -20px 5px 10px 120px;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    display: inline-block; /*display:inline-block;可使导航横向*/
+    border-bottom: 1px dashed #ccc;
+}
+
+#allType nav a {
+    padding: 3px 12px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 100%;
+}
+
+#allType nav li:hover, .li_current {
+    background-color: rgba(55,58,71,0.5); /*104,100,100,灰色*/
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+}
+
+#allType nav li:hover a {
+   color: #f1e893; /*#d0d0d0;#c94e50浅红色,浅黄色fffce1*/
+}
+
+#allType nav .current a {
+    background: #999;
+    /*background-color: #813016;*/
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*===========二级导航样式================*/
+/*#allType nav li:hover ul {
+    display:block;
+    background-color:red;
+}*/
+ul {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+#listType .css_listType {
+    background-color: rgba(55,58,71,0.6);
+    /*background: rgba(200,178,143,0.7);*/
+    filter: alpha(opacity=60);
+    width: 260px;
+    position: relative;
+    /*margin: -200px 0px 0px 125px;*/
+    z-index: 9999;
+    text-align: left;
+    /*left:125px;*/
+    margin-left: 125px;
+}
+
+#listType ul li {
+    padding: 0px 10px;
+    text-align: left;
+    float: left;
+}
+
+#listType ul li:hover a {
+    color: #f1e893;
+}
+
+.novel {
+    height: 80px;
+    top: -230px;
+}
+
+.computer {
+    top: -190px;
+    height: 120px;
+}
+
+.biography {
+    top: -150px;
+    height: 80px;
+}
+
+.life {
+    top: -110px;
+    height: 80px;
+}
+
+.art {
+    top: -70px;
+    height: 120px;
+}
+
+.economy {
+    top: -30px;
+    height: 80px;
+}
+
+/*==============首页主要内容样式==================*/
+#mainContent {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(../Img/fanye.png) no-repeat center top;
+    background-size: 100% 100%;
+   /*overflow:hidden;*/   
+}
+
+.icons {
+    display: inline-block;
+    padding: 0;
+    vertical-align: -2px;
+    font-size: 0;
+    line-height: 9999em;
+    overflow: hidden;
+    position: relative;
+}
+
+.s_note {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px -34px;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    width: 36px;
+    height: 24px;
+}
+
+.s_rcmd {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px -67px;
+    width: 30px;
+    height: 24px;
+}
+
+.s_new {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 30px;
+    height: 24px;
+}
+
+.s_store {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: -2px -228px;
+    width: 28px;
+    height: 32px;
+}
+
+.s_prom {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: -2px -100px;
+    width: 24px;
+    height: 24px;
+}
+
+.s_goodMsg {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: -2px -135px;
+    width: 24px;
+    height: 24px;
+}
+
+.s_hot {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: -2px -273px;
+    width: 24px;
+    height: 28px;
+    margin-right:5px;
+}
+
+.s_dianj {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: -2px -315px;
+    width: 29px;
+    height: 32px;
+    margin-right:5px;
+}
+
+.s_href {
+    background-image: url(../Img/icons/small_icon.png);
+    background-repeat: no-repeat;
+    background-position: 1px -355px;
+    width: 30px;
+    height: 28px;
+    margin-right:5px;
+    z-index:2;
+    display:none;
+}
+
+#NewBookList .bk_pic, #HotBookList .bk_pic, #NovelType .bk_pic {
+    margin-left: -5px;
+}
+
+/*==== 左侧  =====新书及热销书籍样式===*/
+#mainContent .left_div {
+    width: 590px;
+    float: left;
+    display: block;
+   
+}
+
+#mainContent .l_first {
+    width: 500px;
+    margin: 80px 0px 0px 90px;
+    display: inline;
+    float: left;
+}
+
+#mainContent .l_second {
+    width: 520px;
+    margin: 10px 0px 0px 80px;
+    display: inline;
+    float: left;
+}
+
+#mainContent .l_third {
+    width: 520px;
+    margin: 10px 0px 0px 80px;
+    display: inline;
+    float: left;
+}
+
+#NewBookList .li_l, #HotBookList .li_l, #NovelType .li_l, #ComptType .li_l {
+    width: 140px;
+    height: 218px;
+    display: inline;
+    border: 2px solid #fff;
+    float: left;
+    border-radius: 6px 7px;
+}
+
+#PROM_BookList .li_r {
+    width: 140px;
+    height: 175px;
+    display: inline;
+    border: 2px solid #fff;
+    float: left;
+    border-radius: 6px 7px;
+}
+
+#NewBookList .li_l2, #PROM_BookList .li_r2, #NovelType .li_l2, #ComptType .li_l2 {
+    margin: -17px 10px 5px 20px;
+}
+
+#NewBookList .li_o, #PROM_BookList .li_o, #NovelType .li_o, #ComptType .li_o {
+    margin: -17px 10px 5px 10px;
+}
+
+#HotBookList .li_l2 {
+    margin: 10px 10px 5px 20px;
+}
+
+#HotBookList .li_o {
+    margin: 10px 10px 5px 10px;
+}
+
+#NewBookList .face img, #HotBookList .face img, #NovelType .face img, #ComptType .face img {
+    width: 120px;
+    height: 130px;
+    padding: 10px;
+}
+
+#PROM_BookList .face img {
+    width: 125px;
+    height: 100px;
+    padding: 7px 7px 1px 7px;
+}
+
+#NewBookList .face span, #HotBookList .face span, #PROM_BookList .face span, #NovelType .face span, #ComptType .face span {
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    margin-left: 5px;
+    height: 40px;
+}
+
+#NewBookList .face b, #HotBookList .face b, #PROM_BookList .face b, #NovelType .face b, #ComptType .face b {
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#NewBookList .Qcontainer .tip_new, #HotBookList .Qcontainer .tip_new, #NovelType .Qcontainer .tip_new, #ComptType .Qcontainer .tip_new {
+    -webkit-transform: rotate(49deg);
+    width: 94px;
+    margin-bottom: -26px;
+    margin-left: 94px;
+    z-index: 6;
+    position: relative;
+    transform: rotate(49deg);
+    -moz-transform: rotate(49deg);
+}
+
+#PROM_BookList .Qcontainer .tip_prom {
+    -webkit-transform: rotate(49deg);
+    width: 87px;
+    margin-bottom: -40px;
+    margin-left: 80px;
+    z-index: 6;
+    position: relative;
+    transform: rotate(49deg);
+    -moz-transform: rotate(49deg);
+}
+
+#PROM_BookList .Qcontainer .li_r .back {
+    width: 90%;
+    height: 92%;
+    -webkit-transform: rotateY(180deg); /*实现翻转效果，否则会显示在正面上-webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%),*/
+    background: #3b3b3b;
+    background: rgba(0,0,0,0.15); /* -webkit-radial-gradient(center,rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)*/
+    padding: 5%;
+    border-radius: 6px 7px;
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+/*===========右侧内容===============*/
+#mainContent .right_div {
+    float: left;
+    width: 348px;
+    height: auto;
+    margin: 0px 0px 0px 25px;
+    display: inline;
+   
+}
+
+/*{
+   width:inherit;
+    float: left;
+    display: block;
+}*/
+
+/*书屋介绍及榜单样式*/
+.rigth_css {
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0px 1px 10px 1px;
+}
+
+.r_css_second {
+    width: 165px;
+    float: right;
+    display: inline;
+}
+
+#store {
+    height: 195px;
+    margin-bottom: 20px;
+}
+
+    #store .bkStrore {
+        text-indent: 2em;
+        width: 190px;
+        height: 140px;
+        float: left;
+        display: inline;
+    }
+
+    #store img {
+        width: 140px;
+        height: 120px;
+        float: right;
+        margin-right: 10px;
+        display: inline;
+    }
+
+.splitLine {
+    border: 1px dashed #c8b28f;
+    clear: both;
+    margin: 15px 10px 0px 0px;
+}
+
+/*最新促销*/
+#PROM_BookList .Qcontainer .spanOldMoney {
+    font-size: 12px;
+    color: #686464;
+    text-decoration: line-through;
+    width: 30px;
+    margin-left: 3px;
+    display: inline;
+}
+
+#PROM_BookList .Qcontainer .bNewMoney {
+    display: inline;
+    margin-left: 16px;
+}
+
+#PROM_BookList .back button {
+    border-radius: 5px 6px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6a00;
+    padding: 0px;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    margin: 10px 7px 10px 15px;
+    outline: none;
+    display: inline-block;
+}
+
+#PROM_BookList .back .btn_add {
+    border-radius: 5px 6px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6a00;
+    padding: 0px;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    margin: 10px 5px;
+    outline: none;
+    display: inline-block;
+}
+
+/*好评榜单border-bottom:1px solid #f4f4f4;*/
+#HP_list .se_item, #Hot_list .se_item {
+    cursor: pointer;
+}
+
+#HP_list .bk_item_mini, #Hot_list .bk_item_mini {
+    height: 83px;
+    width: 170px;
+    margin: 0;
+    zoom: 1;
+    position: relative;
+    display: none;
+}
+
+#HP_list .item_num, #Hot_list .item_num{
+    position: relative;
+    width: 11px;
+    height: 12px;
+    top: -1px;
+    margin-right: 2px;
+    color: #999;
+    vertical-align: 1%;
+    background-color: #fbf8f0;
+    border: 1px solid #f7f5ed;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+}
+
+#HP_list .bk_mini_num, #Hot_list .bk_mini_num{
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #999;
+    border: 1px solid #f7f5ed;
+    background-color: #fbf8f0;
+    line-height: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+#HP_list .hot_num, #Hot_list .hot_num{
+    color: #fff;
+    border: 1px solid #f77a36;
+    background-color: #f77a36;
+}
+
+#HP_list .hot_mini_num, #Hot_list .hot_mini_num {
+    color: #fff;
+    border: 1px solid #f77a36;
+    background-color: #f77a36;
+}
+
+#HP_list .item_name, #Hot_list .item_name {
+    width: 120px;
+    display: inline-block;
+}
+
+#HP_list .PMList, #Hot_list .PMList {
+    padding: 5px 6px;
+    cursor: pointer;
+}
+
+#HP_list .span_author, #Hot_list .span_author {
+    margin-left: 72px;
+    line-height: 20px;
+    display: block;
+    margin-top: -60px;
+    color: #686464;
+}
+
+#HP_list .span_note, #Hot_list .span_note {
+    margin-left: 72px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+#HP_list .span_star, #Hot_list .span_star {
+    margin-left: 70px;
+}
+
+#HP_list .a_title, #Hot_list .a_title {
+    vertical-align: top;
+    width: 100%;
+    height: 30px;
+}
+
+#HP_list .ic_star_on, #Hot_list .ic_star_on {
+    background-image: url(../Img/icons/star.png);
+    background-position: 0px 0px;
+}
+
+#HP_list .ic_star_half, #Hot_list .ic_star_half {
+    background-image: url(../Img/icons/star.png);
+    background-position: 157px 0px;
+}
+
+#HP_list .ic, #Hot_list .ic {
+    display: inline-block;
+    padding: 0;
+    vertical-align: -2px;
+    font-size: 0;
+    line-height: 9999em;
+    overflow: hidden;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+#HP_list .PMList:hover .se_item, #Hot_list .PMList:hover .se_item {
+    display: none;
+}
+
+#HP_list .PMList:hover .bk_item_mini, #Hot_list .PMList:hover .bk_item_mini {
+    display: block;
+}
+
+/*====底部信息样式=======*/
+#footer .f_nav {
+    width: 65px;
+    height: 100%;
+    line-height: 40px;
+    display: inline-block;
+}
+
+#footer .f_nav a {
+    color: black;
+}
+
+/*书籍翻转3D样式*/
+.Qcontainer {
+    height: 78%;
+    width: 33%;
+    position: relative;
+    -webkit-perspective: 800px; /*设置透视。值越大表示视点与3D场景的景越深，显示隐约的3D效果*/
+    -moz-perspective: 800px;
+    perspective: 800px;
+    float: left;
+    /*margin-right: 7%;*/
+}
+
+.film {
+    /*width: 100%;height: 15em;*/
+    -webkit-transform-style: preserve-3d; /*.Qcontainer 类中添加的透视声明只会应用到其第一个子元素上,所以设置了一个3D场景*/
+    -webkit-transition: 1s;
+    transform-style: preserve-3d;
+    transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transtion: 1s;
+    -ms-transform-style:preserve-3d;
+    -ms-transtion:1s;
+}
+
+.Qcontainer:hover .film {
+    -webkit-transform: rotateY(180deg); /*实现翻转效果*/
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -moz-backface-visibility: hidden; /* Firefox需要在翻转的时候就判断是否隐藏 */
+    -ms-backface-visibility: hidden; 
+    -ms-transform:rotateY(180deg);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;    
+    /* -ms-backface-visibility: visible;*/
+    /*考虑浏览器兼容性，将隐藏代码改为不占空间的display*/
+     /*display:none ;*/
+}
+
+.Qcontainer:hover .tip_new, .Qcontainer:hover .tip_prom { /*隐藏提示图片,占空间*/
+    visibility: hidden;     
+}
+
+/*新增修改方法 20160830*/
+.Qcontainer:hover .back {  
+    -webkit-backface-visibility: visible;  
+    backface-visibility: visible;
+    -moz-backface-visibility: visible;  
+    -ms-backface-visibility: visible;/*兼容ie和火狐浏览器，其他浏览器没有问题*/
+} 
+  
+/*新增修改方法 20160830*/
+.Qcontainer:hover .front {
+    /*display:none;*/
+     -webkit-visibility: hidden;
+     visibility: hidden; 
+     -ms-visibility: hidden; 
+     -moz-visibility: hidden; 
+}
+.face {
+    width: inherit;
+    height: inherit;
+    position: absolute ; /*必须使用绝对定位，处理当翻转之后隐藏在背面*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+    -ms-backface-visibility: hidden;
+    border: 1px solid #fff;
+    border-radius: 6px 7px;
+    -moz-border-top-colors: #fff;
+    -moz-border-bottom-colors: #fff;
+    -moz-border-left-colors: #fff;
+    -moz-border-right-colors: #fff;
+    box-shadow: 0px 3px 5px #b0b0b0;
+    -moz-box-shadow: 0px 3px 5px #b0b0b0;
+    -webkit-box-shadow: 0px 3px 5px #b0b0b0;
+}
+
+.back {
+    width: 90%;
+    height: 94%;
+    -webkit-transform: rotateY(180deg); /*实现翻转效果，否则会显示在正面上；-webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%),*/
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    background: #3b3b3b;
+    background: rgba(0,0,0,0.15); /* -webkit-radial-gradient(center,rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)*/
+    padding: 5%;
+    border-radius: 6px 7px;
+     
+}
+
+.btn_go {
+    border-radius: 5px 6px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6a00;
+    padding: 0px;
+    width: 90px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    margin: 10px 15px;
+    outline: none;
+}
+
+#PROM_BookList .btn {
+    display: inline;
+    float: left;
+}
+
+.back div {
+    font-size: 12px;
+}
+
+.author {
+    text-align: left;
+    display: inline-block;
+    width: 140px;
+    color: #686464;
+}
+
+.back h4, .back h5 {
+    -webkit-margin-before: 0.37em;
+    -webkit-margin-after: 0.37em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    text-align: center;
+    margin: 0.37em 0px;
+}
+
+.front {
+    z-index: 5;
+    cursor: pointer;
+}
+
+.Qcontainer:hover .front {
+    z-index: 0;
+}
+
+/*添加书籍标签*/
+.b_tip_new {
+}

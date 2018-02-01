@@ -1,0 +1,278 @@
+﻿body {
+    font-size:20px;
+    font-family:'微软雅黑',arial;
+    font-weight:bold;
+}
+/*=========CSS3中新增的动画效果 transform=============*/
+#Bk_type .menu ul {
+    border-top: 15px solid black;
+    padding: 0 10px;
+}
+
+#Bk_type .menu ul li a {
+   color: #fff;
+   float: left;
+   margin: 0 5px;
+   font-size: 14px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   width: 65px;
+   padding: 10px 5px;
+   background: #151515;
+   -moz-border-radius: 0 0 5px 5px;
+   -webkit-border-radius: 0 0 5px 5px;
+   border-radius: 0 0 5px 5px;
+   -moz-box-shadow: 0 0 1px #ccc,inset 0 0 2px #fff;
+   -webkit-box-shadow: 0 0 1px #ccc,inset 0 0 2px #fff;
+   box-shadow: 0 0 1px #ccc,inset 0 0 2px #fff;
+   text-shadow: 0 1px 1px #686868;
+   text-decoration: none;
+}
+
+#Bk_type .menu ul li.translate a {
+    background: #2EC7D2;
+}
+
+#Bk_type .menu ul li.translate-x a {
+    background: #8FDD21;
+}
+
+#Bk_type .menu ul li.translate-y a {
+    background: #F45917;
+}
+
+#Bk_type .menu ul li.rotate a {
+    background: #D50E19;
+}
+
+#Bk_type .menu ul li.scale a {
+    background: #cdddf2;
+}
+
+#Bk_type .menu ul li.scale-x a {
+    background: #0fDD21;
+}
+
+#Bk_type .menu ul li.scale-y a {
+    background: #cd5917;
+}
+
+#Bk_type .menu ul li.skew a {
+    background: #519;
+}
+
+#Bk_type .menu ul li.skew-x a {
+    background: #D50;
+}
+
+#Bk_type .menu ul li.skew-y a {
+    background: #E19;
+}
+
+#Bk_type .menu ul li.matrix a {
+    background: #919;
+}
+
+.menu ul li.translate a:hover {
+    -moz-transform: translate(-10px,-10px);
+    -webkit-transform: translate(-10px,-10px);
+    -o-transform: translate(-10px,-10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px,-10px);
+}
+
+.menu ul li.translate-x a:hover {
+    -moz-transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.menu ul li.translate-y a:hover {
+    -moz-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.menu ul li.rotate a:hover {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu ul li.scale a:hover {
+    -moz-transform: scale(0.8,0.8);
+    -webkit-transform: scale(0.8,0.8);
+    -o-transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);
+    transform: scale(0.8,0.8);
+}
+
+.menu ul li.scale-x a:hover {
+    -moz-transform: scaleX(0.8);
+    -webkit-transform: scaleX(0.8);
+    -o-transform: scaleX(0.8);
+    -ms-transform: scaleX(0.8);
+    transform: scaleX(0.8);
+}
+
+.menu ul li.scale-y a:hover {
+    -moz-transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    -o-transform: scaleY(1.2);
+    -ms-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+}
+
+.menu ul li.skew a:hover {
+    -moz-transform: skew(45deg,15deg);
+    -webkit-transform: skew(45deg,15deg);
+    -o-transform: skew(45deg,15deg);
+    -ms-transform: skew(45deg,15deg);
+    transform: skew(45deg,15deg);
+}
+
+.menu ul li.skew-x a:hover {
+    -moz-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+}
+
+.menu ul li.skew-y a:hover {
+    -moz-transform: skewY(30deg);
+    -webkit-transform: skewY(30deg);
+    -o-transform: skewY(30deg);
+    -ms-transform: skewY(30deg);
+    transform: skewY(30deg);
+}
+
+.menu ul li.matrix a:hover {
+    -moz-transform: matrix(1,1,-1,0,0,0);
+    -webkit-transform: matrix(1,1,-1,0,0,0);
+    -o-transform: matrix(1,1,-1,0,0,0);
+    -ms-transform: matrix(1,1,-1,0,0,0);
+    transform: matrix(1,1,-1,0,0,0);
+}
+
+/*=========CSS3中新增的动画效果 transition=============*/
+#Bk_type .transition {
+    clear: both;
+    width: 70px;
+    height: 65px;
+    background: #77eeb7;
+}
+
+#Bk_type .transition:hover {
+    width: 300px;
+    background-color: red;
+    transition: width 2s ease;
+    -moz-transition: width 2s ease; /* Firefox 4 */
+    -webkit-transition: width 2s ease; /* Safari and Chrome */
+    -o-transition: width 2s ease; /* Opera */
+}
+
+/*========CSS3动画效果 animation============*/
+h1{font-size:16px;}
+p{overflow:hidden;height:1px;margin:100px 0 0;background:#ddd;}
+.sun{width:100px;
+     height:100px;
+     padding:10px;
+     border-radius:61px;
+     box-shadow:0 0 10px rgba(204,102,0,.8);
+     background:#F6D66E;
+     background:-moz-linear-gradient(top,#fff,#F6D66E);
+     background:-webkit-linear-gradient(top,#fff,#F6D66E);
+     background:-o-linear-gradient(top,#fff,#F6D66E);
+     background:-ms-linear-gradient(top,#fff,#F6D66E);
+     background:linear-gradient(top,#fff,#F6D66E);
+	-moz-transform:translate(280px,50px);
+	-webkit-transform:translate(280px,50px);
+	-o-transform:translate(280px,50px);
+	-ms-transform:translate(280px,50px);
+	transform:translate(280px,50px);
+	-moz-animation:animations 6s linear;
+	-webkit-animation:animations 6s linear;
+	-o-animation:animations 1.5s linear;
+	-ms-animation:animations 1.5s linear;
+	animation:animations 1.5s linear;
+}
+.sun:hover{
+	-moz-animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+	animation-play-state:paused;
+}
+@-webkit-keyframes animations{
+	0%{-webkit-transform:translate(0,0);}
+	10%{-webkit-transform:translate(0,50px);}
+	20%{-webkit-transform:translate(60px,-120px);}
+	30%{-webkit-transform:translate(60px,50px);}
+	40%{-webkit-transform:translate(120px,-15px);}
+	50%{-webkit-transform:translate(120px,50px);}
+	60%{-webkit-transform:translate(180px,110px);}
+	70%{-webkit-transform:translate(180px,50px);}
+	80%{-webkit-transform:translate(240px,125px);}
+	90%{-webkit-transform:translate(240px,50px);}
+	100%{-webkit-transform:translate(280px,50px);}
+}
+@-moz-keyframes animations{
+	0%{-moz-transform:translate(0,0);}
+	10%{-moz-transform:translate(0,50px);}
+	20%{-moz-transform:translate(60px,-120px);}
+	30%{-moz-transform:translate(60px,50px);}
+	40%{-moz-transform:translate(120px,-15px);}
+	50%{-moz-transform:translate(120px,50px);}
+	60%{-moz-transform:translate(180px,110px);}
+	70%{-moz-transform:translate(180px,50px);}
+	80%{-moz-transform:translate(240px,125px);}
+	90%{-moz-transform:translate(240px,50px);}
+	100%{-moz-transform:translate(280px,50px);}
+}
+@-o-keyframes animations{
+	0%{-o-transform:translate(0,0);}
+	10%{-o-transform:translate(0,50px);}
+	20%{-o-transform:translate(60px,-120px);}
+	30%{-o-transform:translate(60px,50px);}
+	40%{-o-transform:translate(120px,-15px);}
+	50%{-o-transform:translate(120px,50px);}
+	60%{-o-transform:translate(180px,110px);}
+	70%{-o-transform:translate(180px,50px);}
+	80%{-o-transform:translate(240px,125px);}
+	90%{-o-transform:translate(240px,50px);}
+	100%{-o-transform:translate(280px,50px);}
+}
+@-ms-keyframes animations{
+	0%{-ms-transform:translate(0,0);}
+	10%{-ms-transform:translate(0,50px);}
+	20%{-ms-transform:translate(60px,-120px);}
+	30%{-ms-transform:translate(60px,50px);}
+	40%{-ms-transform:translate(120px,-15px);}
+	50%{-ms-transform:translate(120px,50px);}
+	60%{-ms-transform:translate(180px,110px);}
+	70%{-ms-transform:translate(180px,50px);}
+	80%{-ms-transform:translate(240px,125px);}
+	90%{-ms-transform:translate(240px,50px);}
+	100%{-ms-transform:translate(280px,50px);}
+}
+@keyframes animations{
+	0%{transform:translate(0,0);}
+	10%{transform:translate(0,50px);}
+	20%{transform:translate(60px,-120px);}
+	30%{transform:translate(100px,50px);}
+	40%{transform:translate(160px,-15px);}
+	50%{transform:translate(160px,50px);}
+	60%{transform:translate(200px,110px);}
+	70%{transform:translate(250px,50px);}
+	80%{transform:translate(300px,125px);}
+	90%{transform:translate(320px,50px);}
+	100%{transform:translate(380px,50px);}
+}
