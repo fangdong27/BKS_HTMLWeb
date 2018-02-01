@@ -252,7 +252,7 @@
                 <span>联系电话&nbsp;</span> 
                 <span class="textbox" id="spanTel">
                     <span class="textbox-addon">
-                        <a href="javascript:void(0)" class="textbox-icon icon-lock textbox-icon-disabled"></a>
+                        <a href="javascript:void(0)" class="textbox-icon icon-tel textbox-icon-disabled"></a>
                     </span>
                     <input type="tel" maxlength="11" id="registTel" class="textbox-text validatebox-text inputCss" onblur="registBlur(this)" onfocus="registFocus(this)" />
                 </span> 
@@ -271,7 +271,7 @@
                 <span>联系邮箱&nbsp;</span> 
                 <span class="textbox" id="spanEmail">
                     <span class="textbox-addon">
-                        <a href="javascript:void(0)" class="textbox-icon icon-lock textbox-icon-disabled"></a>
+                        <a href="javascript:void(0)" class="textbox-icon icon-mail textbox-icon-disabled"></a>
                     </span>
                     <input type="email" id="registEmail" class="textbox-text validatebox-text inputCss" onblur="registBlur(this)" onfocus="registFocus(this)" />
                 </span> 
